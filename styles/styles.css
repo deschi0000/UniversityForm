@@ -1,0 +1,156 @@
+header, main, footer{
+
+    /* background-color: #2596be; */
+    min-height: 10rem;
+
+}
+
+header {
+    /* background-color: linear-gradient(#e6007e, #e50052); */
+    background: #e6007e;
+    background-image: url(../images/unilu_logo.png);
+    background-repeat: no-repeat;
+    background-position:right bottom;
+    background-size: 180px;
+    margin-bottom:2rem;
+
+}
+
+main {
+    min-height: 90rem;
+}
+
+h1, h3{
+    font-family: serif;
+    text-align: center;
+
+
+}
+
+.intro-container h3 {
+    border-bottom: 1px solid gray;
+    height: 3rem;
+    
+}
+
+.intro-container p{
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-style: italic;
+
+}
+
+.intro-container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body{
+    box-shadow: 0px 0px 5px 1px gray; 
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: arial,sans-serif;
+    color: #313131;
+}
+
+@media screen and (max-width: 600px) {
+    body{width: 100%;}
+    label{width: 0px;}
+
+    
+}
+
+@media screen and (max-width: 950px) {
+    body{width: 100%;}
+    label{width: 0px;}
+}
+
+fieldset {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+legend{
+    /* font-size: 1.2rem; */
+}
+
+
+
+label {
+    float: left;
+    display: block;
+    text-align: right;
+    /* width: 220px; */
+    width: 410px;
+    padding-right: 2rem;
+}
+
+input, textarea {
+    display: block;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 37.5em){
+    label { float: none; text-align: left; margin-bottom:0.5rem;}
+    input [ type=”submit”]
+          { margin-left: 0; }
+
+}
+
+textarea {
+    min-width: 250px;
+    max-width: 250px;
+    max-height: 300px;
+}
+
+.instructor-container p {
+    font-style: italic;
+    margin-top: 0;
+}
+
+#thank-you-container{
+    margin: 3rem 0;
+    text-align: center
+}
+
+footer {
+    text-align: center;
+    /* background: #e6007e; */
+    padding-top: 3rem;
+    border-top: 1px solid gray;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer p {
+    /* margin-top: 10rem; */
+}
+
+.references {    
+    color: rgb(163, 163, 163);
+    padding: 5rem;
+}
+
+.links, a {
+    color: #313131;
+    /* text-decoration: none; */
+    font-style: italic;
+    /* transition: 150ms; */
+    display: inline-block;
+}
+
+a:hover{
+    color: rgb(156, 156, 156);
+    /* transition: 150ms; */
+
+}
+
+
+a:visited{
+    color: #313131;
+}

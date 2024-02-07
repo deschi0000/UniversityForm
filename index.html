@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4</title>
+
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <!-- Dave von Deschwanden - 301303220 -->
+        <div class="intro-container">
+            <h1>Universitaet Luzern</h1>
+            <h3>Continuing Education Course / Instructor Evaluation</h3>
+            <p>
+                Please Read each statement carefully and consider each one individually.
+            </p>
+            <label for="courseName">Course Name/Code: </label>
+            <input type="text" name="courseName" id="courseName" required>
+
+            <label for="semesterSelect">Semester / Year:</label>
+            <select name="semesterSelect" id="semesterSelect">
+                <option value="spring">Spring</option>
+                <option value="summer">Summer</option>
+                <option value="fall">Fall</option>
+                <option value="winter">Winter</option>
+            </select>
+            <select name="semesterSelect" id="semesterSelect">
+                <option value="year-one">Year 1</option>
+                <option value="year-two">Year 2</option>
+                <option value="year-three">Year 3</option>
+                <option value="year-four">Year 4</option>
+            </select><br/><br/>
+            <label for="instructorName">Instructor: </label>
+            <input type="text" name="instructorName" id="instructorName" required>
+
+        </div>
+        <fieldset class="instructor-container">
+            <legend><h3>Instructor</h3></legend>
+            <p>How Would you rate the instructor's:</p>
+
+            <label for="q-one">1. <strong>Knowledge</strong> of subject? </label>
+            <select name="q-one" id="q-one">
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+                <option value="fair">Fair</option>
+                <option value="not-satisfactory">Not Satisfactory</option>
+            </select><br/><br/>
+
+            <label for="q-two">2. <strong>Helpfulness</strong>? </label>
+            <select name="q-two" id="q-two">
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+                <option value="fair">Fair</option>
+                <option value="not-satisfactory">Not Satisfactory</option>
+            </select><br/><br/>
+
+            <label for="q-three">3. <strong>Courtesy and Respect</strong> for all students? </label>
+            <select name="q-three" id="q-three">
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+                <option value="fair">Fair</option>
+                <option value="not-satisfactory">Not Satisfactory</option>
+    /* width: 220px; */
+            </select><br/><br/>
+
+            <label for="q-four">4. <strong>Communication</strong> skills? </label>
+            <select name="q-four" id="q-four">
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+                <option value="fair">Fair</option>
+                <option value="not-satisfactory">Not Satisfactory</option>
+            </select><br/><br/>
+
+            <label for="q-five">5. <strong>Overall Performance</strong>? </label>
+            <select name="q-five" id="q-five">
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+                <option value="fair">Fair</option>
+                <option value="not-satisfactory">Not Satisfactory</option>
+            </select><br/><br/>
+        </fieldset>
+
+
+        <fieldset class="course-container">
+            <legend><h3>Course</h3></legend>
+
+            <label for="q-six">5. How would you rate the <strong>course materials</strong>? </label>
+            <select name="q-six" id="q-six">
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+                <option value="fair">Fair</option>
+                <option value="not-satisfactory">Not Satisfactory</option>
+            </select><br/><br/>
+
+            <label for="q-seven">7. How much did this course meet your <strong>expectations</strong>? </label>
+            <select name="q-seven" id="q-seven">
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+                <option value="fair">Fair</option>
+                <option value="not-satisfactory">Not Satisfactory</option>
+            </select><br/><br/>
+
+            <label for="q-eight">8. How would you rate the <strong>course materials</strong>? </label>
+            <select name="q-eight" id="q-eight">
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+                <option value="fair">Fair</option>
+                <option value="not-satisfactory">Not Satisfactory</option>
+            </select><br/><br/>
+        </fieldset>
+
+
+        <fieldset class="general-information-container">
+            <legend><h3>General Information</h3></legend>
+           
+            <label for="q-nine">9. Was the <strong>course outline</strong> properly reviewed/explained at the beginning of your course? </label>
+            <select name="q-nine" id="q-nine">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+                <option value="not-sure">Not Sure</option>
+            </select><br/><br/><br/>
+            
+            <label for="q-ten">10. Would you <strong>recommend</strong> this course to a friend with the same interest? </label>
+            <select name="q-ten" id="q-ten">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+                <option value="not-sure">Not Sure</option>
+            </select><br/><br/><br/>
+        </fieldset>
+
+
+        <fieldset class="any-other-comments-container">
+            <legend><h3>Any Other Comments</h3></legend>
+
+            <label for="q-eleven">11. What is the <strong>best thing</strong> about this course? </label>
+            <textarea rows="2" cols="30" value="q-eleven"></textarea>
+
+            <label for="q-twelve">12. How could we <strong>improve</strong> this course? </label>
+            <textarea rows="2" cols="30" value="q-twelve"></textarea>
+
+            <label for="q-thirteen">13. Other: </label>
+            <textarea rows="5" cols="30" value="q-thirteen"></textarea>
+
+
+        </fieldset>
+
+        <div id="thank-you-container">
+            <p>Thank you for your feedback!</p>
+        </div>
+    </main>
+    <footer>
+        <p class="links">Web: <a href="https://www.unilu.ch/en/" target="_blank">University of Luzern</a></p>&nbsp;&nbsp; |&nbsp;&nbsp;
+        <p class="links">Dave's <a href="https://www.unilu.ch/en/" target="_blank"> Profile</a></p> &nbsp;&nbsp; |&nbsp;&nbsp; 
+
+        <p class="links">Email: <a href="mailto:someone@example.com" target="_blank">universitaetluzern.edu</a></p>
+
+
+        <small><p class="references">University Luzern Logo.[Digital Image]. https://upload.wikimedia.org/wikipedia/de/thumb/a/a1/Logo_Universit%C3%A4t_Luzern.svg/500px-Logo_Universit%C3%A4t_Luzern.svg.png?20090405162338</p></small>
+    </footer>
+</body>
+</html>
